@@ -6,7 +6,7 @@ app.use('/public', express.static(path.resolve(__dirname, 'public')));
 app.get('/',function (req, res) {
   res.sendFile(__dirname + '/public/index.html')
 });
-app.listen(8080, () => console.log('Listening on http port 8080'));
+app.listen(5000, () => console.log('Listening on http port 5000'));
 const websocketServer = require('websocket').server;
 const httpServer = http.createServer();
 httpServer.listen(9090, () => console.log('Listening on ws port 9090'));
